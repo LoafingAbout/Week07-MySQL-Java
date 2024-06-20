@@ -13,8 +13,7 @@ public class DbConnection {
 	private static String USER = "projects";
 	
 	public static Connection getConnection() {
-		String uri = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s",HOST, PORT, SCHEMA, USER, PASSWORD);
-		
+		String uri = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s", HOST, PORT, SCHEMA, USER, PASSWORD);
 		try {
 			Connection conn = DriverManager.getConnection(uri);
 			System.out.println("Connection to schema '" + SCHEMA + "' is successful.");

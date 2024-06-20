@@ -1,13 +1,9 @@
 package projects;
-/*
- * @author LoafingAbout
- */
-public class ProjectsApp {
 
-	/*
-	 * @param args
-	 */
+import projects.dao.DbConnection;
+
+public class ProjectsApp {
 	public static void main(String[] args) {
-		
+		DbConnection.getConnection();
 	}
 }
